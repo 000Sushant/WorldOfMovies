@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About us</title>
+	<link rel="icon" type="image/png" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYgMTZjMCAxLjEwNC0uODk2IDItMiAyaC0xMmMtMS4xMDQgMC0yLS44OTYtMi0ydi04YzAtMS4xMDQuODk2LTIgMi0yaDEyYzEuMTA0IDAgMiAuODk2IDIgMnY4em04LTEwbC02IDQuMjIzdjMuNTU0bDYgNC4yMjN2LTEyeiIvPjwvc3ZnPg==">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+			body{
+				overflow-x:hidden;
+				font-family: 'Noto Sans JP', sans-serif;
+			}
+			.navbar .navbar-brand{
+				font-family: 'Lobster', cursive;
+				color: red;
+				font-size: 200%
+			}
+			.navbar .navbar-brand:hover{
+				color: #b30000;
+			}
+			.nav-item a{
+				color: red;
+				font-size: 120%;
+			}
+			.nav-item a:hover{
+				background-color: rgba(0,0,0,0.05);
+			}
+			.nav-item .nav-link{
+				color: red;
+			}
+			.navbar-nav button{
+				background-color: red;
+				color: white;
+				font-weight: bold;
+			}
+			.navbar-nav button:hover {
+				background-color: #b30000;
+			}
+			.dropdown-menu{
+				background-color: red;
+			}
+			.dropdown-menu .dropdown-item{
+				color: white;
+				font-size: 100%;
+			}
+			.navbar{
+				padding: 3px 3px; 
+			}
+			#img_border{
+				border: 15px solid rgba(0,0,0,0.5);
+				padding: 6px;
+				margin-top: 2%;
+			}
+			.welcome h1{
+				color: red;
+				font-weight: bolder;
+				padding-top: 2rem;
+			}
+			h2{
+				color: rgb(225,0,0);
+			}
+			.lead{
+				color: gray;
+				padding-bottom: 1.5%;
+			}
+			#wom{
+				font-family: 'Lobster', cursive;
+			}
+			footer{
+				background-color: #3f3f3f;
+				color: #d5d5d5;
+				padding: 5rem;
+				border-left: 25px solid transparent;
+				border-right: 25px solid transparent;
+				border-top: 50px solid #555;
+				border-bottom: 50px solid #555;
+			}
+			hr.light{
+				border-top: 1px solid #d5d5d5;
+				width: 75%;
+			}
+			hr.light-100{
+				margin-top: 5%;
+				border-top: 1px solid #d5d5d5;
+				width: 100%;
+			}
+			.hr-padding{
+			 	border-top: 1px solid transparent;
+			 }
+			footer a{
+				color: #d5d5d5;
+			}
+			footer a:hover{
+				color: #d5d5d5;
+			}
+			footer h5{
+				font-weight: bolder;
+			}
+			/*responsive media quire*/
+			@media (max-width: 1200px){
+				.follow{
+					margin-top:%;
+					margin-bottom: 1%;
+				}
+			}
+			@media screen and (max-width: 768px){
+				/*Activate when screen size will be less then 768px */
+				.display-4{
+					font-size: 240%;
+				}
+				.padding{
+					padding:1rem;
+				}
+				.padding i{
+					padding-top: 2rem;
+				}
+			}
+	</style>
+</head>
+<body>
+	<!--navigation-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  	<a class="navbar-brand" href="index.html">World of Movies</a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	  	<span class="navbar-toggler-icon"></span>
+	  	</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    	<ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="Login.html">Log-in <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="Signin.html">Sign-up</a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Category
+		        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Action</a>
+			          <a class="dropdown-item" href="#">Advanture</a>
+			          <a class="dropdown-item" href="#">Comedy</a>
+			          <a class="dropdown-item" href="#">Romantic</a>
+			          <a class="dropdown-item" href="#">Horror</a>
+			        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link active" href="#">About us</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Services</a>
+		      </li>
+		    </ul>
+		    <ul class="navbar-nav ml-auto">
+		    	<button class="btn">Contact us</button>
+		    </ul>
+		</div>
+	</nav>
+
+	<!--About us heading-->
+
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">About us</h1>
+				<div class="col-12">
+					<p class="lead">Curios to know about us? just scroll down.</p>
+				</div>
+				<hr>
+				<h2 style="padding-bottom: 20px;">About syntxerror</h2>
+			</div>
+		</div>
+	</div>
+
+	<!--more info-->
+	<div class="container-fluid padding">
+		<div class="row padding">
+			<div class="col-md-12 col-lg-6">
+				<p>Morbi non volutpat ipsum. Vestibulum luctus, nisi sit amet tristique feugiat, purus arcu tempus nunc, sed pulvinar nulla ipsum quis turpis. Integer commodo facilisis odio eget commodo. Nullam blandit urna id dolor scelerisque, fermentum fermentum leo mattis. Integer et felis sollicitudin, pulvinar nisi sed, fermentum mi. Nunc tincidunt pharetra venenatis. Suspendisse potenti. Vestibulum felis nibh, consequat quis dignissim at, consectetur nec nibh. Nam imperdiet orci ac dui pretium ultrices. In accumsan felis metus. Praesent vestibulum erat augue, at fermentum ex porta sit amet. In ex diam, dictum ut lacus sit amet, tristique fermentum quam. Curabitur pharetra sapien eu metus scelerisque sollicitudin. Etiam sapien enim, eleifend id odio pharetra, ullamcorper consectetur sapien.</p>
+				<p>Integer vel nisi nec justo molestie scelerisque. Praesent mattis dapibus scelerisque. Vivamus rutrum ipsum nec augue dictum, vel consectetur turpis placerat. Cras iaculis nibh sed eros sodales dapibus. Maecenas condimentum congue velit, cursus volutpat odio ultricies ac. Integer at cursus odio, et convallis elit. Aenean ante libero, blandit vel neque id, iaculis ultrices nibh. Pellentesque consequat, libero et dictum lacinia, urna velit sagittis lacus, ut congue erat quam sed purus. Donec dictum dui sed dignissim interdum. Aenean laoreet neque velit, in ornare arcu imperdiet sit amet. Nullam massa sapien, suscipit eget ultrices ac, faucibus egestas mi. Phasellus eu tortor eget quam euismod vehicula.</p>
+				<p>Aenean mattis felis et vulputate aliquet. Donec at neque sit amet metus volutpat aliquam. In quis tempus nisl. Donec finibus nisi at magna viverra, a ultricies neque feugiat. Pellentesque mattis sapien sed dolor bibendum, luctus ultricies orci aliquam. Suspendisse commodo nunc vel nulla consequat, et suscipit lorem venenatis. Duis semper augue vel erat vulputate aliquam. Ut sem sapien, commodo at rutrum eu, porttitor a ex. Aenean a pharetra lorem. Nullam maximus urna lorem, et hendrerit metus dapibus et. In hac habitasse platea dictumst. Curabitur a ex justo. Ut aliquet arcu aliquam arcu ullamcorper, sit amet cursus lorem ultrices.</p>
+				<br>
+				<div class="text-center"><a href="#" class="btn btn-danger">Learn more</a></div>
+			</div>
+			<div class="col-lg-6 col-md-12">
+				<img id="img_border" src="img/girl.jpg" class="img-fluid">
+			</div>
+		</div>
+	</div>
+	<hr class="my-4">
+
+	<!--About members-->
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h2 style="padding-bottom: 20px;">About members</h2>
+				<div class="col-12">
+					<p class="lead">The company leading by 10 leaders from accross the world</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--members list-->
+	<figure>
+		<div class="container-fluid padding">
+			<div class="row padding">
+				<div class="col-md-3">
+					<div class="card">
+						<img class="card-img-top" src="img/sushant_profile.jpg">
+						<div class="card-body text-center">
+							<h4 class="card-title" style="font-weight: bolder; color: red;">Sushant Kumar</h4>
+							<p class="card-text">Computer Science and Engineering Btech student of Lovely Professional University</p>
+							<a href="#" class="btn btn-danger">Follow</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="card">
+						<img class="card-img-top" src="img/meraj_profile.jpg">
+						<div class="card-body text-center">
+							<h4 class="card-title" style="font-weight: bolder; color: red;">Md. Meraj Alam</h4>
+							<p class="card-text">Electronics Engineering Btech student of Dr. B C Roy Durgapur</p>
+							<a href="#" class="btn btn-danger follow">Follow</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="card">
+						<img class="card-img-top" src="img/akshat_profile.jpg">
+						<div class="card-body text-center">
+							<h4 class="card-title" style="font-weight: bolder; color: red;">Akshat Sakharkar</h4>
+							<p class="card-text">Computer Science and Engineering Btech student of Lovely Professional University</p>
+							<a href="#" class="btn btn-danger">Follow</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="card">
+						<img class="card-img-top" src="img/sushmita_profile.jpg">
+						<div class="card-body text-center">
+							<h4 class="card-title" style="font-weight: bolder; color: red;">Sushmita chatarjee</h4>
+							<p class="card-text">Electronics Engineering Btech student of Dr. B C Roy Durgapur</p>
+							<a href="#" class="btn btn-danger follow">Follow</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<hr>
+
+	<!--jumbotron info-->
+	<div class="container-fluid">
+		<div class="row jumbotron">
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+				<p style="text-align: center;">A dummy responsive webdesign using html, css, javascript and bootstrap to download and steem the latest hollywood and bollywood movies online for free.<br>For more information just follow us on instagram and wait for the upcomming events.</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2" style="text-align: center;">
+				<a href="https://www.instagram.com/syntxerror/" target="_new"><button type="button" class="btn btn-outline-secondary btn-lg">Follow now</button></a>
+			</div>
+		</div>
+	</div>
+
+	<!--Tools used heading-->
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h2 style="padding-bottom: 20px;">Tools used</h2>
+				
+				<div class="col-12">
+					<p class="lead">We used the latest version web design tools to creat this beautiful illusion.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--tools used-->
+	<div class="container-fluid padding">
+		<div class="row text-center padding">
+			<div class="col-xs-12 col-sm-6 col-md-4 ">
+				<i class='fas fa-code' style='font-size:48px;color:red'></i>
+				<h3 style="font-weight: bolder; padding-top:5px;">HTML</h3>
+				<p>Build with latest version of HTML, HTML5</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<i class='fas fa-bold' style='font-size:48px;color:#400080'></i>
+				<h3 style="font-weight: bolder; padding-top:5px;">BOOTSTRAP</h3>
+				<p>Build with latest version of Bootstrap, Bootstrap4</p>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<i class='fab fa-css3' style='font-size:48px;color:#1a75ff'></i>
+				<h3 style="font-weight: bolder; padding-top:5px;">CSS</h3>
+				<p>Build with latest version of CSS, CSS3</p>
+			</div>
+		</div>
+	</div>
+	<hr class="my-4">
+
+	
+
+
+	</figure>
+
+	<!--footer-->
+	<footer>
+		<div class="container-fluid padding">
+			<div class="row text-center">
+				<div class="col-md-4">
+					<h3 id="wom">World of Movies</h3>
+					<hr class="light">
+					<p>+91 906400XX90</p>
+					<p>000sushantkumar@gmail.com</p>
+					<p>960 Street Name</p>
+					<p>City, State, 713420</p>
+				</div>
+
+				<div class="col-md-4">
+					<hr class="hr-padding">
+					<h5>Navigation</h5>
+					<hr class="light">
+					<p><a href="Aboutus.html">About us</a></p>
+					<p><a href="#">Services</a></p>
+					<p><a href="#">Login</a></p>
+					<p><a href="#">Signup</a></p>
+				</div>
+
+				<div class="col-md-4">
+					<hr class="hr-padding">
+					<h5>Members</h5>
+					<hr class="light">
+					<p>Sushant</p>
+					<p>Meraj</p>
+					<p>Akshat</p>
+					<p>Sushmita</p>
+				</div>
+
+				<div class="col-12">
+					<hr class="light-100">
+					<h5>&copy; worldofmovies.com</h5>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

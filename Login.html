@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in</title>
+	<link rel="icon" type="image/png" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYgMTZjMCAxLjEwNC0uODk2IDItMiAyaC0xMmMtMS4xMDQgMC0yLS44OTYtMi0ydi04YzAtMS4xMDQuODk2LTIgMi0yaDEyYzEuMTA0IDAgMiAuODk2IDIgMnY4em04LTEwbC02IDQuMjIzdjMuNTU0bDYgNC4yMjN2LTEyeiIvPjwvc3ZnPg==">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+			body{
+				overflow-x:hidden;
+				font-family: 'Noto Sans JP', sans-serif;
+				background-color: #0c1816;
+			}
+			*{
+				box-sizing: border-box;
+			}
+			
+			.row{
+				background-color: white;
+				border-radius: 30px;
+			}
+			img{
+				border-top-left-radius: 25px;
+				border-bottom-left-radius:25px;
+			}
+			#wom{
+				font-family: 'Lobster', cursive;
+				color: black;
+				font-weight: bolder;
+			}
+			.btn1{
+				border: none;
+				outline: none;
+				height: 50px;
+				width: 100%;
+				background-color: black;
+				color: white;
+				border-radius: 4px;
+				font-weight: bold;
+				margin-bottom: 10%;
+				transition: 0.1s;
+			}
+			.btn1:hover{
+				transition: 0.5s;
+				background-color: white;
+				color: black;
+				border: 1px solid black; 
+			}
+			.margin{
+				margin-left: 20%;
+			}
+			.margin button{
+				margin-bottom: 5px;
+			}
+			
+			.fa-facebook{
+				color: #3b5998;
+			}
+			.fa-twitter{
+				color: #00aced;
+			}
+			.fa-instagram{
+				color: lightcoral;
+			}
+			.Form{
+				margin-top: 2%;
+			}
+		.fogot{
+			float: right;
+			margin-right: 22%;
+		}
+		.social{
+			margin-bottom: 0%;
+		}
+		.social a{
+			font-size: 20px;
+			padding: 10px;
+		}
+		p{
+			margin-top: 8%;
+			margin-right: 15%;
+			margin-left: 15%;
+
+		}
+		#skip{
+			margin-bottom: 9%;
+			margin-top: 3%;
+		}
+		
+		@media (max-width: 991px){
+				img{
+					border-radius: 30px 30px 0 0;
+				}
+				.Form{
+					text-align: center;
+					width: 100%;
+					height: auto;
+				}
+				.margin{
+					left: -10%;
+				}
+				.fogot{
+					margin-right: 40%
+				}
+			}
+		@media(max-width: 767px){
+			.fogot{
+				margin-right: 35%;
+			}
+			p{
+				margin-top:10%;
+				font-size: 11px;
+			}
+		}
+		@media(max-width: 450px){
+			.fogot{
+				margin-right: 29%;
+			}
+		}
+	</style>
+
+</head>
+<body>
+
+	<section  class="Form text-center">
+		<div id="form" class="container ">
+			<div class="row no-gutters">
+				<div class="col-lg-5">
+					<img src="img/login_back.jpg" class="img-fluid" alt="background">
+				</div>
+			<div class="col-lg-7 px-5 pt-5">
+				<h1 id="wom" class="py-3">World of Movies</h1>
+				<h4>Log into your account</h4>
+				<form>
+					<div class="form-row ">
+						<div class="col-lg-7 margin">
+							<input type="email" name="email" placeholder="Email-Address" class="form-control my-3 p-4">
+						</div>
+					</div>
+					<div class="form-row ">
+						<div class="col-lg-7 margin">
+							<input type="password" name="password" placeholder="********" class="form-control my-3 p-4">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-lg-7 margin">
+							<button type="button" class="btn1">Login</button>
+						</div>
+					</div>
+					<a href="#" class="fogot">Forgot password</a>
+					<p>by loging in you are accepting all the <strong>tearms and conditions</strong> of world of movies </p>
+					<div class="container-fluid">
+						<div >
+							<div class=" col-lg-7 col-sm-12 col-xl-12">
+								<h5>or <a href="Signin.html">sign in</a> using</h5> 
+							</div>
+							<div class="col-lg-7 col-sm-12 col-xl-12 social">
+									<a href="#"><i class="fab fa-facebook"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+							</div>
+							<p id="skip">or<a href="index.html"> skip</a> for now</p> 
+						</div>	
+					</div>
+				</form>
+			</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
